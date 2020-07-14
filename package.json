@@ -1,56 +1,26 @@
 {
 	"name": "totalcross",
-	"displayName": "TotalCross Project Extension",
+	"displayName": "TotalCross Project Extension (Deprecated)",
 	"description": "This is TotalCross plugin extension for vs code. ",
-	"version": "0.0.8",
+	"version": "0.0.91",
 	"publisher": "Italo",
 	"preview": true,
-	"icon": "icon.png",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/TotalCross/totalcross-vscode-plugin"
+		"url": "https://github.com/ItaloYeltsin/totalcross-vscode-plugin"
 	},
 	"categories": [
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.login",
-		"onCommand:extension.register",
-		"onCommand:extension.createNewProject",
-		"onCommand:extension.package",
-		"onCommand:extension.deploy",
-		"onCommand:extension.deployAndRun"
+		"*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
-			{
-				"command": "extension.createNewProject",
-				"title": "TotalCross: Create new Project"
-			},
-			{
-				"command": "extension.package",
-				"title": "TotalCross: Package"
-			},
-			{
-				"command": "extension.deploy",
-				"title": "TotalCross: Deploy"
-			},
-			{
-				"command": "extension.deployAndRun",
-				"title": "TotalCross: Deploy&Run"
-			},
-			{
-				"command": "extension.login",
-				"title": "TotalCross: Login"
-			},
-			{
-				"command": "extension.register",
-				"title": "TotalCross: Register"
-			}
 		]
 	},
 	"scripts": {
@@ -72,14 +42,6 @@
 		"vscode-test": "^1.2.2"
 	},
 	"dependencies": {
-		"child_process": "^1.0.2",
-		"fs-extra": "^8.1.0",
-		"node-ssh": "^6.0.0",
-		"pom-parser": "^1.1.1",
-		"replace-in-file": "^4.2.0",
-		"request": "^2.88.2",
-		"request-promise": "^4.2.5",
-		"totalcross-core-dev": "^1.0.4",
 		"xml-js": "^1.6.11"
 	}
 }
